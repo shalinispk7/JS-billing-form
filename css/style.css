@@ -1,0 +1,43 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: #b4bcc8;
+}
+
+
+form{
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid #00000080;
+    /* top: 100px; */
+    width: 30%;
+	background-color: #fff;
+	border-radius:10px;
+	padding: 20px;
+}
+h4{
+	text-align: center;
+    padding: 25px;
+    font-size: 25px;
+}
+form input{
+	padding: 5px;
+    border: 1px solid #423d3d;
+    border-radius: 7px;
+}
+.gap{
+	margin-bottom: 15px;
+}
+p{
+	text-align: center;
+}
+#btn{
+	padding: 4px 8px;
+    font-size: 15px;
+}

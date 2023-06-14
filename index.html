@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript-DOM-Billing Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="billing-sec">
+      <div class="container">
+        <h4>Billing form</h4>
+        <form>
+          <div class="gap">
+            <label for="amount">Bill Amount: </label>
+            <input type="text" id="inp1" value="" />
+          </div>
+          <div class="gap">
+            <label for="tips">Tips in %: </label>
+            <input type="text" id="inp2" value="" />
+          </div>
+          <div class="gap">
+            <label for="tipsamt">Tips in amount: </label>
+            <input type="text" id="inp3" value="" disabled="disabled"/>
+          </div>
+          <div class="gap">
+            <label for="total">Total amount: </label>
+            <input type="text" id="inp4" value="" disabled="disabled"/>
+          </div>
+          <div>
+            <button id="btn">Submit</button>
+          </div>
+          <p>Thank You!! Visit again!!</p>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      
+
+      
+      btn.addEventListener('click',function(e){
+        
+        e.preventDefault()
+        let inp1=document.getElementById("inp1").value
+      let inp2=document.getElementById("inp2").value
+      let inp3El=document.getElementById("inp3")
+      let inp4El=document.getElementById("inp4")
+      let btn=document.getElementById("btn")
+
+
+      let inp3,inp4;
+      inp3=parseInt((inp2/100)*inp1); 
+      inp4=parseInt(inp3+parseInt(inp1));
+      inp3El.value=inp3;
+      inp4El.value=inp4;
+
+      })
+      
+    </script>
+  </body>
+</html>
